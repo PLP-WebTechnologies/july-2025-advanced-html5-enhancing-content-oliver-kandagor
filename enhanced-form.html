@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Week 2 Assignment - HTML5 Advanced Content and Forms">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+</head>
+<body>
+
+    <header>
+        <h1>Week 2 Assignment: Enhancing HTML5 Content & Mastering Forms</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Objectives</h2>
+            <ol>
+                <li>Embed video content</li>
+                <li>Use HTML lists</li>
+                <li>Create HTML tables</li>
+                <li>Embed audio</li>
+                <li>Build HTML5 forms</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Embedded Video</h2>
+            <video width="320" height="240" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Embedded Audio</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Sample Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Oliver</td>
+                        <td>Baringo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>HTML5 Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required minlength="3"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="At least 6 characters" required minlength="6"><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="^\+254[0-9]{9}$" placeholder="+254XXXXXXXXX" required><br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">-- Select Gender --</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label>
+                        <input type="checkbox" name="subscribe" checked>
+                        Subscribe to newsletter
+                    </label><br><br>
+
+                    <label>
+                        <input type="radio" name="terms" required>
+                        I agree to the terms and conditions
+                    </label><br><br>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 | PLP Web Technologies Classroom - HTML5 Advanced Assignment</p>
+    </footer>
+
+</body>
+</html>
